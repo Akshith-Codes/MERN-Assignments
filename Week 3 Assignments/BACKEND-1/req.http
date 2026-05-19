@@ -1,0 +1,51 @@
+### Read all users
+GET http://localhost:6000/user-api/users
+
+### Read a user by ID
+GET http://localhost:6000/user-api/users/3
+
+### Create New User
+POST http://localhost:6000/user-api/users 
+Content-Type: application/json
+
+{
+    "id":3,
+    "name":"kamal",
+    "age":20
+}
+
+### Update User Information
+PUT http://localhost:6000/user-api/users
+Content-Type: application/json
+
+{
+    "id":1,
+    "name":"santosh",
+    "age":23
+}
+
+
+### Delete a User by ID
+DELETE http://localhost:6000/user-api/users/1
+
+
+
+##---------Product API--------##
+
+
+### Create New Product
+POST http://localhost:6000/product-api/products
+Content-Type: application/json
+
+{
+    "productID":1,
+    "name":"Salt",
+    "brand":"Tata",
+    "price":20
+}
+
+### Read All Products
+GET http://localhost:6000/product-api/products
+
+### Read All Products by Brand
+GET http://localhost:6000/product-api/products/brand

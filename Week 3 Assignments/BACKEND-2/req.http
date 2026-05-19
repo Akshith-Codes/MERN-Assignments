@@ -1,0 +1,81 @@
+### Read all users (Req to Proctected Route)
+GET http://localhost:4000/user-api/users
+
+
+### Read a user from email 
+GET http://localhost:4000/user-api/user
+
+### Create New User
+POST http://localhost:4000/user-api/users 
+Content-Type: application/json
+
+{
+"username":"bhanu",
+"password":"bhanu",
+"email":"bhanu@gmail.com",
+"age":19
+}
+
+
+### Update User Information
+PUT http://localhost:4000/user-api/users/69aa8af57d4c15882c599c1e
+Content-Type: application/json
+
+{
+"username":"Akshith Nair",
+"password":"Akshithh678",
+"email":"Akshith901@gmail.com",
+"age":109
+}
+
+### User Login
+POST http://localhost:4000/user-api/auth
+Content-Type: application/json
+
+{
+    "email":"kiran@gmail.com",
+    "password":"kiran"
+}
+
+### Delete a User by ID
+DELETE http://localhost:4000/user-api/users/69aa8af57d4c15882c599c1e
+
+### Add Product to user cart
+PUT http://localhost:4000/user-api/cart/product-id/69b24301a3479ad83c0b9e54
+
+
+
+###---Product API---###
+
+
+
+### Read All Products
+GET http://localhost:4000/product-api/products
+
+### Read a Product by ID
+GET http://localhost:4000/product-api/products/102
+
+### Create New Product
+POST http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "productId":102,
+    "productName":"CPU",
+    "price": 20000,
+    "brand": "AMD"
+}
+
+### Update a product by productId
+PUT http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "productId":101,
+    "productName":"RAM",
+    "price": 15000,
+    "brand": "Samsung"
+}
+
+### Delete a product by productId
+DELETE http://localhost:4000/product-api/products/101
