@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    gap: 20px;
+}
+.parent{
+    margin: 150px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.child{
+    padding: 50px;
+    box-shadow: 0px 0px 20px gray;
+
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+nav{
+    display: flex;
+    margin: auto;
+    background-color: rgb(196, 182, 182);
+padding: 40px;
+    justify-content: space-evenly;
+}
