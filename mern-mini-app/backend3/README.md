@@ -151,7 +151,7 @@ Base URL: `/employee-api`
 
 ---
 
-## 🗄 Employee Schema
+##  Employee Schema
 
 | Field | Type | Required | Constraints |
 |---|---|---|---|
